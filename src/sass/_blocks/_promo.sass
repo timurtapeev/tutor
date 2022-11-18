@@ -1,0 +1,89 @@
+.promo
+    height: 100vh
+    .container
+        padding-top: 183px
+    &__title
+        font-weight: 400
+        font-size: 36px
+        line-height: 44px
+        color: #232323
+        width: 249px
+        margin-left: 67px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            left: -18px
+            bottom: 70px
+            width: 57px
+            height: 30px
+            background: rgba(97, 180, 207, 0.2)
+            border-radius: 40px 5px
+            transform: rotate(-3deg)
+            z-index: -1
+        &::after
+            content: ''
+            position: absolute
+            left: -14px
+            bottom: 66px
+            width: 57px
+            height: 30px
+            background: #61B4CF
+            border-radius: 40px 5px
+            z-index: -1
+    &__descr
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #545454
+        margin: 18px 0 0 77px
+        width: 410px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            top: -17px
+            left: -10px
+            width: 400px
+            height: 1px
+            background: #D9D9D9
+    &__img
+        position: absolute
+        top: 25%
+        right: 0
+        width: 645px
+        height: 406px
+        border-radius: 40px 40px 40px 172px
+        img
+            width: inherit
+            height: inherit
+            border-radius: 40px 40px 40px 172px
+            object-fit: cover
+    &__decorate
+        &_1
+            position: absolute
+            background-color: $main-color
+            width: 677px
+            height: 406px
+            top: 0
+            right: 0
+            border-radius: 40px 40px 40px 172px
+            z-index: -1
+        &_2
+            position: absolute
+            background: rgba(43, 148, 184, 0.2)
+            width: 668px
+            top: 0
+            right: 0
+            height: 424px
+            border-radius: 40px 40px 40px 172px
+            z-index: -1
+        &_3
+            position: absolute
+            width: 660px
+            height: 406px
+            background: #024E68
+            top: -16px
+            right: 0
+            border-radius: 40px 40px 40px 172px
+            z-index: -1

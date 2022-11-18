@@ -1,0 +1,60 @@
+.service
+    padding: 50px 0 35px
+    &__list
+        margin-top: 65px
+        display: flex
+        justify-content: space-around
+    &__item
+        height: 158px
+        width: 310px
+        background: linear-gradient(195.83deg, rgba(43, 148, 184, 0.2) 0%, rgba(170, 168, 253, 0.2) 50%, rgba(55, 192, 239, 0.2) 100%)
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        padding: 10px 25px 18px
+        &:nth-child(3)
+            height: 167px
+    &__descr
+        margin: 42px auto 0
+        width: 360px
+        height: 96px
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        text-align: center
+        color: #C9C9C9
+.item
+    &__title
+        width: 100%
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: #292929
+        text-align: center
+        margin-bottom: 12px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 282px
+            height: 1px
+            bottom: -6px
+            left: -80px
+            transform: translateX(25%)
+            background: #D9D9D9
+    &__descr
+        position: relative
+        left: 50%
+        transform: translateX(-38%)
+        margin-bottom: 18px
+        li
+            font-weight: 400
+            font-size: 12px
+            line-height: 15px
+            color: #292929
+    &__price
+        width: 100%
+        text-align: center
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #292929

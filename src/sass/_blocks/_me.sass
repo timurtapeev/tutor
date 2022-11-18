@@ -1,0 +1,62 @@
+.me
+    padding: 50px 0 150px
+    &__info
+        display: flex
+        justify-content: space-between
+    &__subtitle
+        width: 301px
+        font-weight: 400
+        font-size: 24px
+        color: #232323
+        margin: 83px 0 0 73px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            bottom: -8px
+            left: 0
+            width: 510px
+            height: 1px
+            background: #D9D9D9            
+    &__descr
+        width: 489px
+        font-weight: 400
+        font-size: 16px
+        color: #848484
+        margin: 18px 0 40px 93px
+    &__achievements
+        margin: 40px 0 0 113px
+    &__photo
+        margin-top: 40px
+        width: 305px
+        height: 421px
+        position: relative
+        img
+            width: inherit
+            height: inherit
+            object-fit: cover
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 40px 80px
+        &::before
+            content: ''
+            position: absolute
+            top: -17px
+            left: -16px
+            width: 315px
+            height: 435px
+            background: linear-gradient(157.22deg, rgba(55, 192, 239, 0.2) 4.02%, rgba(170, 168, 253, 0.2) 60.34%, rgba(43, 148, 184, 0.182) 98.11%)
+            filter: blur(1px)
+            border-radius: 40px 100px
+            transform: rotate(-3.18deg)  
+            z-index: -1
+        &::after
+            content: ''
+            position: absolute
+            bottom: -18px
+            right: -25px
+            width: 303px
+            height: 418px
+            background: $main-color
+            border-radius: 40px 100px
+            transform: rotate(2.67deg) 
+            z-index: -1
