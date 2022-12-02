@@ -2,7 +2,8 @@
     position: fixed
     width: 100%
     z-index: 10
-    background-color: #fff
+    transition: 0.5s all
+    backdrop-filter: blur(2px)
     &__list
         margin-top: 16px
         list-style: none
@@ -15,6 +16,7 @@
         display: inline
         padding: 10px 18px
         transition: all 0.3s
+        backdrop-filter: blur(2px)
         a
             font-weight: 400
             font-size: 16px
@@ -22,6 +24,12 @@
             text-decoration: none
             transition: all 0.3s
         &:hover
-            background: linear-gradient(258.77deg, rgba(55, 192, 239, 0.6) 0%, rgba(170, 168, 253, 0.6) 48.01%, rgba(43, 148, 184, 0.6) 100%)
+            background: rgba(43, 148, 184, 0.6)
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25)
             a
                 color: #F9F9F9
+    &_scrolled
+        background-color: #fff
+        opacity: 0.9
+        
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05)

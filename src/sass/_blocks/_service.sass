@@ -5,14 +5,12 @@
         display: flex
         justify-content: space-around
     &__item
-        height: 158px
-        width: 310px
-        background: linear-gradient(195.83deg, rgba(43, 148, 184, 0.2) 0%, rgba(170, 168, 253, 0.2) 50%, rgba(55, 192, 239, 0.2) 100%)
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
-        border-radius: 5px
-        padding: 10px 25px 18px
-        &:nth-child(3)
-            height: 167px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:last-child
+            .item__text
+                height: 167px
     &__descr
         margin: 42px auto 0
         width: 360px
@@ -23,34 +21,33 @@
         text-align: center
         color: #C9C9C9
 .item
+    &__header
+        background: #2B94B8
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+        border-radius: 5px
+        width: 282px
+        height: 29px
+    &__text
+        height: 119px
+        width: 242px
+        background: linear-gradient(195.83deg, rgba(43, 148, 184, 0.2) 0%, rgba(170, 168, 253, 0.2) 50%, rgba(55, 192, 239, 0.2) 100%)
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05)
+        border-radius: 0px 0px 5px 5px
     &__title
         width: 100%
-        font-weight: 500
+        font-weight: 400
         font-size: 16px
-        line-height: 19px
-        color: #292929
+        line-height: 29px
+        color: #FFFFFF
         text-align: center
-        margin-bottom: 12px
-        position: relative
-        &::before
-            content: ''
-            position: absolute
-            width: 282px
-            height: 1px
-            bottom: -6px
-            left: -80px
-            transform: translateX(25%)
-            background: #D9D9D9
     &__descr
-        position: relative
-        left: 50%
-        transform: translateX(-38%)
-        margin-bottom: 18px
+        width: 201px
+        margin: 13px 21px 16px 37px
         li
             font-weight: 400
             font-size: 12px
             line-height: 15px
-            color: #292929
+            color: #848484
     &__price
         width: 100%
         text-align: center

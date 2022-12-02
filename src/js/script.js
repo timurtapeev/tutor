@@ -1,3 +1,5 @@
+
+// slider
 let offset = 0;
 let slideIndex = 1;
 
@@ -13,11 +15,13 @@ slidesField.style.transition = '0.5s all';
 
 slidesWrapper.style.overflow = 'hidden';
 
+const scrollWidth = 255;
+
 next.addEventListener('click', () => {
-    if (offset == 260 * (slides.length - 3)) {
+    if (offset == scrollWidth * (slides.length - 3)) {
         offset = 0;
     } else {
-        offset += 260; 
+        offset += scrollWidth; 
     }
 
     slidesField.style.transform = `translateX(-${offset}px)`;
@@ -31,9 +35,9 @@ next.addEventListener('click', () => {
 
 prev.addEventListener('click', () => {
     if (offset == 0) {
-        offset = 260 * (slides.length - 3);
+        offset = scrollWidth * (slides.length - 3);
     } else {
-        offset -= 260;
+        offset -= scrollWidth;
     }
 
     slidesField.style.transform = `translateX(-${offset}px)`;
@@ -45,3 +49,19 @@ prev.addEventListener('click', () => {
     }
 });
 
+//scroll nav
+const navigationPanel = document.querySelector('.nav');
+
+function countBlockHeight(selector) {
+    let promoBlock = document.querySelector(selector);
+    return promoBlock.scrollHeight;
+}
+
+document.addEventListener('scroll', () => {
+    let scrollTop = window.scrollY;
+    if(countBlockHeight('.promo') < scrollTop + 50) {
+        navigationPanel.classList.add('nav_scrolled');
+    } else {
+        navigationPanel.classList.remove('nav_scrolled');
+    }
+});
