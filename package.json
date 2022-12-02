@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timurtapeev/resume.git"
+    "url": "https://github.com/timurtapeev/tutor.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/timurtapeev/resume/issues"
+    "url": "https://github.com/timurtapeev/tutor.git"
   },
   "homepage": "https://github.com/timurtapeev/resume#readme",
   "devDependencies": {
