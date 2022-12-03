@@ -1,0 +1,161 @@
+@media (min-width: 1023px)
+    .promo
+        &__wrapper
+            width: 453px
+            margin-left: 40px
+        &__title
+            font-size: 32px
+            line-height: 38px
+        &__descr
+            &::after
+                width: 400px
+    .me
+        &__info
+            margin-right: 40px
+
+@media (min-width: 767px) and (max-width: 1022px)
+    .container
+        width: 760px
+
+@media (max-width: 1022px)
+    .promo
+        &__wrapper
+            width: 433px
+            margin-left: 40px
+        &__title
+            font-size: 30px
+            line-height: 32px
+    .me
+        &__info
+            flex-direction: column-reverse
+            align-items: center
+        &__photo
+            margin-top: 60px
+            &::before
+                content: none
+            &::after
+                content: none
+        &__subtitle
+            margin-top: 43px
+    .service
+        &__list
+            flex-direction: column
+        &__item
+            margin-bottom: 30px
+    .slider
+        width: 370px
+        &__wrapper
+            width: 269px
+
+@media (max-width: 766px)
+    .container
+        width: 100vw
+    .nav    
+        z-index: 7
+        &__list
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            height: 100vh
+            z-index: 2
+            position: absolute
+            top: 0
+            right: -100%
+            width: 50%
+            padding: 30px 20px
+            background-color: rgba(255, 255, 255)
+            opacity: 0.9
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            transition: 0.5s all
+            margin-top: 0
+            &_active
+                right: 0
+        &__item
+            padding-right: 0
+            border: none
+            margin: 10px
+            &:hover
+                background: none
+                box-shadow: none
+                a
+                    color: #232323
+            a
+                font-size: 18px
+    .hamburger
+        z-index: 3
+        display: block
+        position: absolute
+        right: 20px
+        top: 50%
+        transform: translateY(80%)
+        height: 14px
+        width: 26px
+        span
+            display: block
+            height: 2px
+            background-color: rgba(43,148,184,.6)
+            margin-bottom: 4px
+            border-radius: 5px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: 1px 
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(45deg)
+    .me
+        &__subtitle
+            margin-left: 10px
+            &::before
+                width: 300px           
+        &__descr
+            width: 300px
+            margin: 18px auto 40px
+        &__achievements
+            margin: 40px auto
+    .promo
+        &__wrapper
+            width: 263px
+            margin-left: 20px
+            padding: 6px 20px 0 30px
+        &__title
+            font-size: 26px
+            line-height: 30px
+        &__descr
+            font-size: 14px
+            line-height: 20px
+    .gift
+        &__item
+            width: 304px
+            height: 166px
+
+@media (min-width: 319px) and (max-width: 374px)
+    .promo__wrapper
+        border-radius: 40px
+        height: 70vh
+        padding: 6px 20px 0 20px
+    .service__descr
+        width: 260px
+    .slider
+        width: 300px
+        &__wrapper
+            width: 255px
+    .achievment
+        &__body
+            width: 273px
+        &__text
+            &_1
+                font-size: 16px
+            &_2
+                font-size: 13px
+    .me
+        &__achievements
+            position: relative
+            transform: translateX(-20px)
+        &__descr
+            font-size: 14px
+    .nav__item
+        padding: 0 
